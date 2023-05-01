@@ -1,0 +1,6 @@
+Type of events
+1. load events(window,image,script)
+2.click(buttom, div, paragraph)
+3.keyup(input,focus,blur)
+4.mouseover(any element)
+5submit(form)

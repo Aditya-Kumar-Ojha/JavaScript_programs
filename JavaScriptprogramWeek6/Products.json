@@ -1,0 +1,21 @@
+
+[
+    {
+        "name":"Hammer",
+        "description":"A clew hammer",
+        "price":120,
+        "rating":{
+                   "min":2,
+                   "max":5
+                 }
+    },
+    {
+        "name":"Vide game controller",
+        "description":"A video game controller",
+        "price":15000,
+        "rating":{
+                   "min":0,
+                   "max":10
+                 }
+    }
+]

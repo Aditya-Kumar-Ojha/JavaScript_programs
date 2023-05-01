@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum a libero non repudiandae quaerat, asperiores cupiditate molestias, provident, sequi facere vel repellendus eveniet deserunt soluta. Nam officia obcaecati optio voluptatum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, veniam. Aut accusantium explicabo eligendi et ducimus, vitae quas laboriosam iure voluptas natus delectus doloremque laudantium ab praesentium molestias aspernatur! Dignissimos.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae rerum omnis nemo facilis, voluptate recusandae unde illo repellat ipsum sint ratione non voluptates, aperiam, culpa totam corrupti. Similique, ex ratione.
+    </p>
+
+    <button onclick="changeColor();">Change color</button>
+
+    <script>
+        function changeColor(){
+            //change the color of the text
+            document.getElementsByTagName('p')[0].style.color='crimson';
+
+            //change the back ground color
+            document.getElementsByTagName('p')[1].style.backgroundColor='red';
+            //change the font size of the paragraph
+            document.getElementsByTagName('p')[2].style.fontSize='20px';
+        }
+
+    </script>
+</body>
+</html>

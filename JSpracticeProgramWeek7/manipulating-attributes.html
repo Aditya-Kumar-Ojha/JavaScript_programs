@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="C:\Users\akojha\Pictures\Screenshots\Screenshot 2023-03-18 122758.png" alt="Screenshot">
+    <!-- <img src="C:\Users\akojha\Pictures\Screenshots\Screenshot 2023-03-22 092424.png" alt="Screenshot">
+    <img src="Screenshot 2023-04-15 023413.png" alt="comments"> -->
+    <button onclick="changeImage();">Change Image</button>
+
+    <script>
+        function changeImage(){
+            // document.querySelector('img').src='Screenshot 2023-04-15 023413.png';
+
+            //hasAttribute(), getAttribute(),setAttribute()
+            //hasAttribute(), getAttribute(),setAttribute()  methods are available to a DOM node in order to check, access and update attributes of that DOM node in Html page
+
+            //hasAttribute give us a boolean values which check basically attribute provide attribute is present or not as below ?
+            console.log(document.querySelector('img').hasAttribute('src'));
+            console.log(document.querySelector('img').hasAttribute('alt'));
+
+            //getAttribute if the attribute values exist it gives the value of the attribute
+            console.log(document.querySelector('img').getAttribute('alt'));
+            console.log(document.querySelector('img').getAttribute('src'));
+            //setAttribute if we want to change the value of the attribute we use set setAttribute
+            console.log( document.querySelector('img').setAttribute('src','Screenshot 2023-04-15 023413.png'));
+        }
+    </script>
+</body>
+</html>

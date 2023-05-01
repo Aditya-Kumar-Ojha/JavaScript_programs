@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error libero facere est velit eos obcaecati quis veritatis ratione ullam officia deserunt suscipit repudiandae doloribus quibusdam, molestiae illum perspiciatis maiores fugiat?</p>
+    
+    <!-- <script src="./index.js" type="module"> </script> 
+    <script src="./store.js" type="module"> </script> -->
+
+    <script type= "module" >
+        import complexnumber,{ sum, diff, product as multiply } from "/index.js";
+        import { product } from "/store.js";
+        console.log( sum( 10, 20 ) );
+        console.log( diff( 30, 20 ) );
+        console.log( multiply( 10, 20 ) );
+        console.log( product('Spice', 200) );
+        const cmplx=new complexnumber( 10, 20 );
+        console.log(cmplx.toString());
+    </script>
+</body>
+</html>

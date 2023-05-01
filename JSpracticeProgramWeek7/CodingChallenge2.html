@@ -1,0 +1,90 @@
+<!-- Create a html page having some paragraph tag and some h2,h3 tags with some text inside them along with a div tag having id as ‘div’.
+All h2,h3 have same  value of  className attribute i.e, “header”
+All paragraphs tag have className attribute as “paragraph”.
+Now print the content of all paragraph tag in the browser console.
+And add a new h1 inside the div tag in html using js code.
+And also change the text of all header tags  to “HEADINGS” and paragraph tags to “PARAGRAPH”. -->
+
+
+<!DOCTYPE html>
+<head> 
+    <title>GetElementByIDAndClass</title>
+</head>
+<body>
+    <h2 class="header">This is demo h2 heading.We will use this element to perform various operation on it using JS code.</h2>
+    <h3 class="header">This is demo h3 heading.We will use thiselement to perform various operation on it using JS code.</h2>
+    <p class="paragraph">This is the first demo paragraph.It hascontent to apply various js operation on it.</p>
+    <p class="paragraph">This is the second demo paragraph.It hascontent to apply various js operation on it.</p>
+    <div id="div">This is a demo div.It doesn't have any futher childtags inside it till now.</div>
+</body>
+    <script>
+    var h2=document.getElementsByClassName('header')
+    var p=document.getElementsByClassName('paragraph')
+    var div=document.getElementById('div')
+    for(var i=0;i<p.length;i++)
+    {
+        console.log(p[i]);p[i].innerText="PARAGRAPH";
+        }
+        for(var i=0;i<h2.length;i++)
+        {
+            h2[i].innerText="HEADING";
+            }
+            div.innerHTML='<h1>THis heading is inserted using JS CODE</h2>';
+            </script>
+</html>
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 class="header">H2 tags</h2>
+    <h2 class="header">H2 Tags2</h2>
+
+    <h3 class="header">H3 tags</h3>
+    <h3 class="header">H3 tags2</h3>
+
+    <p class="paragraph">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et consequuntur, cumque inventore doloribus est quaerat id nam eum quisquam ad cupiditate at reprehenderit, itaque omnis quas cum quia rerum ipsum?
+    </p > 
+
+    <p class="paragraph">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint assumenda, tempora, architecto voluptas est voluptatem alias atque, a rem cum debitis? Labore minus veniam porro. Temporibus sapiente ducimus necessitatibus corrupti!
+    </p>
+
+    <div id="div">
+        Jay shree Ram!!
+    </div>
+
+    <script>
+
+        var PARAGRAPH=document.getElementsByClassName('paragraph');
+        console.log(PARAGRAPH);
+        
+                var P=document.querySelectorAll('.header').innerText='HEADINGS';   
+                var H=document.querySelectorAll('.paragraph').innerText='PARAGRAPH';
+                        for(var i=0;i<p.length;i++)
+                         {
+                            console.log(P[i]);P[i].innerText="PARAGRAPH";
+                         }
+                        for(var i=0;i<H.length;i++)
+                            {
+                                H[i].innerText="HEADING";
+                            }
+                            div.innerHTML='<h1>THis heading is inserted using JS CODE</h2>';
+    </script>
+
+
+</body>
+</html> -->
+

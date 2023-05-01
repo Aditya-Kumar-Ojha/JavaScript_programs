@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Enter your name:<input type="Text" id="name" />
+    Enter your Mobile Number:<input type="Text" id="number" />
+    Enter your City: <input type="Text" id="city" />
+    
+    <script>
+        // let UserName, Number,city
+
+        document.querySelector('#name').addEventListener('input', function(){
+            localStorage.setItem('User', JSON.stringify({name:this.value}) );
+            
+        });
+
+        document.querySelector('#number').addEventListener('input', function(){
+            localStorage.setItem('Number:', this.value );
+            
+        });
+
+        document.querySelector('#city').addEventListener('input', function(){
+            localStorage.setItem('City:', this.value );
+            
+        }); 
+
+        let keys=Object.keys(localStorage);
+        for (let key of keys){
+            if(key=="User" || key=="Number" || key=="City"){
+                console.log(`${key} : ${localStorage.getItem(key)}`);
+            }
+            
+        }
+
+        
+    </script>
+</body>
+</html>

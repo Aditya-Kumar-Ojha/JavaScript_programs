@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="Para-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ratione quaerat ut voluptatem nihil veniam dolorum, quam neque eius dolorem nam animi. Dignissimos corrupti nobis dolores. Odio recusandae ipsa vero?</p>
+
+    <button>2nd ClickMe</button>
+
+    <button onclick="handlerClick();">Click Me</button>
+
+    <script>
+        window.onload=function(){
+            alert('the page has loaded');
+
+        };
+        function handlerClick(){
+            alert('I was clicked');
+            console.log('I was clicked')
+        };
+        //2nd way perfered
+
+        document.querySelector('button').onclick=handlerClick;
+
+        //  through on event we can only fire one event at a time. if we try to fire multiple event a time only one event will be fire.
+        
+        // document.getElementById('Para-1').onmouseover= function(){
+        //     console.log("mouse is over on paragraph");
+        // };
+
+        // preferable way because we fire multiple event at a time
+
+        document.getElementById('Para-1').addEventListener ('mouseover' ,  function(){ 
+            console.log( 'mouse is over paragraph (1)' )
+        });
+
+        document.getElementById('Para-1').addEventListener ('mouseover' ,  function(){ 
+            console.log( 'mouse is over paragraph (2)' )
+        });
+    </script>
+</body>
+</html>

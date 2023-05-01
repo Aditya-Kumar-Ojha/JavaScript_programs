@@ -1,0 +1,33 @@
+<!-- Create a demo.html file having two paragraph tag and two anchor tags inside the body tag.
+
+Now write the code in the console in the browser to change-
+
+1.The background color of the whole html page to green.
+
+2.To list all the child tag inside the body tag in console.
+3.To change the title of the html page from the console window. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>It's facebook page</p>
+    <p>It's instagram page</p>
+    <a href="https://facebook.com"> Fackbook</a>
+    <a href="https://instagram.com"> instagram</a>
+</body>
+</html>
+
+<!-- To change the background backgroundColor of the page. -->
+document.documentElement.style.backgroundColor='green'
+
+<!-- //To see all data and tag inside the body tag in html page -->
+
+document.documentElement.childNodes[1].childNodes
+<!--  // to change the title of the page via console. -->
+ document.title="Title changed"

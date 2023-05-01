@@ -1,0 +1,49 @@
+<!-- Create a html page having a button element with id as ‘btn’ inside the  body of the page.
+
+Now when a user accesses the html page in the browser, the page before loading the button to the web page should display an alert stating “the page contains a button”.
+Now Whenever user clicks on the button it should print “Button Clicked on the browser console”
+User onclick attribute of button tag and querySelector with proper input parameter to access button tag inside JS Code. -->
+
+<!-- //1st way -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click and load events</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni et eius perferendis, dolore excepturi atque aut minus porro hic magnam distinctio harum vero! Impedit quaerat harum velit nisi debitis.
+    </p>
+    <button id="btn">Button</button>
+    <script>
+        window.onload=alert("the page contains a Button1");
+        
+        var btn=document.querySelector('#btn');
+        btn.onclick=function(){
+            console.log('Button Clicked');
+        }
+    </script>
+</body>
+</html>
+
+<!-- //2nd way -->
+
+<!-- <!DOCTYPE html>
+<head>
+  <title>Click and load events</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus aspernatur consequuntur dicta rerum, rem officia illo velit ad! Eveniet veritatis quod obcaecati totam qui ullam earum asperiores impedit laudantium explicabo.</p>
+  <button id="btn1">Button2</button>
+</body>
+
+<script>
+  window.onabort=alert("The page contains a button");
+        var button=document.querySelector('#btn1');
+		button.onclick=function()
+		{console.log("Button Clicked")}
+</script>
+</html> -->
